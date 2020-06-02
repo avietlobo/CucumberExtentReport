@@ -1,3 +1,5 @@
+package runners;
+
 import java.io.File;
 import java.util.Random;
 
@@ -11,7 +13,6 @@ import com.cucumber.listener.Reporter;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
-
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		
@@ -19,7 +20,7 @@ import cucumber.api.junit.Cucumber;
 features= {"src/test/resources/Dummy.feature"},
 glue= {"step"},
 plugin={"com.cucumber.listener.ExtentCucumberFormatter:"})
-public class TestRunner
+public class TestRunner1
 {
 	
 	@BeforeClass

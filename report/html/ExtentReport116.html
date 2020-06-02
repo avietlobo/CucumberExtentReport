@@ -46,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jun 2, 2020 02:48:36 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jun 2, 2020 04:39:42 PM</span>
 				</a>
 			</li>
 			<li>
@@ -174,12 +174,12 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Login to Bank Application</span>
-						<span class='test-time'>Jun 2, 2020 02:48:36 PM</span>
+						<span class='test-time'>Jun 2, 2020 04:39:42 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='fail'>
-	<span class='duration right label'>0h 0m 13s+318ms</span>
+	<span class='duration right label'>0h 0m 39s+969ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Login Successfull</span>
@@ -199,14 +199,13 @@
 			<b>When</b>
 			
 			<span class="bdd-step-name">When I enter valid credentials</span>
-				<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Welcome')]"}
+				<div class='pre'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: chrome=83.0.4103.61)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-QN4VMSOD', ip: '192.168.1.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\YESU_R~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57573}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 863de0f53cea540b78805bf3ccbbcea5
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\YESU_R~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60749}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 37db590272a7045ad0aafbdc86bde049
 *** Element info: {Using=xpath, value=//*[contains(text(),'Welcome')]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -222,8 +221,13 @@ Session ID: 863de0f53cea540b78805bf3ccbbcea5
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at step.Steps.i_enter_valid_credentials(Steps.java:69)
-	at ✽.When I enter valid credentials(src/test/resources/Dummy.feature:10)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at step.Steps.i_enter_valid_credentials(Steps.java:75)
+	at ?.When I enter valid credentials(src/test/resources/Dummy.feature:10)
 </pre></div>
 			
 		</li>
@@ -232,9 +236,6 @@ Session ID: 863de0f53cea540b78805bf3ccbbcea5
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then I should be taken to the Overview page</span>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="C:\Users\YESU_ROWINA\eclipse-workspace\new\CucumberExtent\target\cucumber-reports\screenshots\Login_Successfull.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
 				<div class='pre'>skipped</div>
 			
 		</li>
@@ -295,7 +296,7 @@ Session ID: 863de0f53cea540b78805bf3ccbbcea5
 
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
-                                <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+                                <span class='exception-name'>org.openqa.selenium.WebDriverException</span>
                                 <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
                             </div>
                             <div class='exception-content hide'>
@@ -310,16 +311,15 @@ Session ID: 863de0f53cea540b78805bf3ccbbcea5
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Jun 2, 2020 02:48:47 PM</td>
+                                                        <td>Jun 2, 2020 04:39:53 PM</td>
                                                         <td class='linked' test-id='4'>Login to Bank Application.Login Successfull.When I enter valid credentials</td>
-                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Welcome')]"}
+                                                        <td><pre><pre>org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: chrome=83.0.4103.61)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-QN4VMSOD', ip: '192.168.1.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\YESU_R~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57573}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 863de0f53cea540b78805bf3ccbbcea5
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\YESU_R~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60749}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 37db590272a7045ad0aafbdc86bde049
 *** Element info: {Using=xpath, value=//*[contains(text(),'Welcome')]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -335,8 +335,13 @@ Session ID: 863de0f53cea540b78805bf3ccbbcea5
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at step.Steps.i_enter_valid_credentials(Steps.java:69)
-	at ✽.When I enter valid credentials(src/test/resources/Dummy.feature:10)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at step.Steps.i_enter_valid_credentials(Steps.java:75)
+	at ?.When I enter valid credentials(src/test/resources/Dummy.feature:10)
 </pre></pre></td>
                                                     </tr>
                                         </tbody>
@@ -381,19 +386,19 @@ Session ID: 863de0f53cea540b78805bf3ccbbcea5
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jun 2, 2020 02:48:36 PM</div>
+					<div class='panel-lead'>Jun 2, 2020 04:39:42 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jun 2, 2020 02:48:50 PM</div>
+			 		<div class='panel-lead'>Jun 2, 2020 04:40:35 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>14,187ms</div>
+					<div class='panel-lead'>52,576ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
