@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('BUILD') {
             steps {
-                      git 'https://github.com/avietlobo/CucumberJenkinsReportProject.git'
+                      git 'https://github.com/avietlobo/CucumberExtentReport.git'
                       bat label: '', script: 'mvn clean'
             }
         }

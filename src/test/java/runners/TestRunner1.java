@@ -25,10 +25,10 @@ public class TestRunner1
 	
 	@BeforeClass
 	public static void setup() {
-		Random rand = new Random(); 
+		Random rand = new Random();
 		 int rand_int1 = rand.nextInt(1000); 
 	    ExtentProperties extentProperties = ExtentProperties.INSTANCE;
-	    extentProperties.setReportPath("report/html/ExtentReport"+ rand_int1 +".html");
+	    extentProperties.setReportPath("report/html/ExtentReport"+".html");
 	}	
 	
 
